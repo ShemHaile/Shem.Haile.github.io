@@ -1,0 +1,139 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+.bod{
+  text-align: center;
+  flex-wrap: wrap;
+}
+.button{
+  border: 15px groove blue;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: beige;
+}
+.button:hover 
+{
+  background-color: red;
+}
+.f{
+  display: flex;
+  justify-content: space-between;
+  border: 5px solid black;
+  background-color: beige;
+}
+
+.navbar ul{
+  display:flex;
+  background-color: lightgray;
+  text-decoration: none;
+  list-style: none;
+  padding: 20px;
+  justify-content: center;
+}
+
+.navbar ul li {
+  padding-left: 100px;
+}
+.navbar {
+  text-decoration: none;
+  justify-content: space-between;
+}
+.head{
+  display:flex;
+  flex-direction: column;
+}
+.reform-text{
+  display:flex;
+  flex-direction: column;
+}
+
+.dark-mode{
+  background-color: black;
+  color: white;
+}
+
+.petition-container{
+  display: flex;
+  flex-direction: row;
+  Gap: 20px;
+  width: 100;
+  padding-bottom: 50px;
+}
+
+.petition-para{
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures{
+  width: 45%;
+  padding-right: 10px;
+}
+
+/* Add to CSS file */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+  color: red;
+}
+
+.modal {
+   display: none; 
+   position: fixed; 
+   z-index: 1; 
+   left: 0;
+   top: 0;
+   width: 100%; 
+   height: 100%; 
+   overflow: auto; 
+   background-color: rgba(0,0,0,0.4); 
+  align-items: center;
+  
+  
+}
+.modal-content {
+   background-color: #fefefe;
+   margin: 15%;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+
+.revealable {
+  position:relative;
+  transform:translateY(150px);
+  opacity:0;
+  transition:all 2s ease;
+}
+
+.active{
+opacity: 1;
+transform: translateY(0px)
+}
+

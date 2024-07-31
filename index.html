@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#Y">Why do we need campaign finance reform?</a></li>
+      <li><a href="#a">What we can do about it</a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button></li>
+    </ul>
+  </div>
+
+  <div class="bod">
+    <div>
+      <div class="head">
+        <h1>Campaign Finance</h1>
+        <h2>Campaign Finance is the way political campaigns are funded, here are some of the issues that are being
+          discussed in the media </h2>
+        <button class="button"><a href="https://www.oyez.org/cases/2008/08-205">Citizens United v. FEC</a></button>
+        <button class="button"><a href="https://www.commoncause.org/our-work/money-influence/campaign-finance/">Common
+            Cause</a></button>
+        <button class="button"><a href="https://www.opensecrets.org">Who are your representatives being funded
+            by?</a></button>
+      </div>
+      <div class="revealable">
+        <h3>How are Campaigns are funded?</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JwqEkjipAoY?si=CLX4Cq6_Yn0OfP_0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="why revealable">
+        <h3 id="Y">Why do we need Campaign Finance Reform?</h3>
+        <p class="reform-text">Campaign finance reform is crucial in the United States to uphold the principles of
+          democracy and ensure fair representation of all citizens. Currently, the influence of money in politics allows
+          wealthy individuals, corporations, and special interest groups to wield disproportionate power over elections
+          and policymaking. This undermines the democratic process by potentially silencing the voices of ordinary
+          citizens and distorting policy priorities in favor of those with financial resources. Reforming campaign
+          finance laws is essential to promote transparency, reduce corruption, and restore public trust in government
+          institutions. By establishing stricter regulations on campaign donations, limiting the influence of dark
+          money, and enhancing disclosure requirements, the United States can move towards a more equitable electoral
+          system where political decisions reflect the will and interests of the broader populace.</p>
+        <img
+          src="https://www.westerncity.com/sites/main/files/imagecache/lightbox/main-images/9d906493c407c061812ffa4679a4546d.jpeg" />
+      </div>
+      <div class="revealable">
+        <h3 id="a">What we can do going forward</h3>
+        <p>To pressure the government to enact campaign finance reform, citizens can engage in various forms of advocacy
+          and activism. First and foremost, organizing grassroots movements and participating in peaceful protests can
+          amplify public awareness and demonstrate widespread support for reform. Contacting elected representatives
+          through letters, emails, and phone calls to express concerns and demand action on campaign finance reform is
+          also effective. Furthermore, supporting organizations dedicated to electoral transparency and reform, and
+          staying informed about candidates' stances on campaign finance issues, enables voters to make informed choices
+          at the ballot box. By collectively advocating for legislative changes that curb the influence of money in
+          politics, citizens can play a pivotal role in encouraging the government to prioritize and implement
+          meaningful campaign finance reform.</p>
+      </div>
+      <img src="https://www.commoncause.org/wp-content/uploads/2019/05/Screen-Shot-2019-05-21-at-1.32.38-PM.png">
+    </div>
+  </div>
+  <div class="petition revealable" id="petition">
+
+    <h2>Sign Our Petition 📢</h2>
+    <div class="petition-container revealable">
+
+
+      <div class="petition-para revealable">
+        Join our movement for campaign finance reform today by signing our petition! It's time to reclaim our democracy from the grip of big money and special interests. Our current system allows wealthy donors and corporations to wield disproportionate influence over elections, drowning out the voices of everyday Americans. By signing this petition, you're demanding transparency, accountability, and fairness in our electoral process. Let's ensure that every citizen's voice is heard and that elections reflect the will of the people, not the size of their wallets. Together, we can build a political system that truly works for everyone, where candidates compete on ideas and integrity, not on who can raise the most money. Take action now and be part of the change we desperately need!
+      </div>
+
+      <div id="result" class="signatures revealable">
+        <p>🖊️ DJ from Brooklyn supports this.</p>
+        <p>🖊️ Amy from Queens supports this.</p>
+        <p>🖊️ Teresa from Harlem supports this.</p>
+      </div>
+
+    </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <!-- inputs go here -->
+      <label for="name">Name:</label>
+      <input id="name" type="text">
+       <label for="email">Email</label>
+      <input id="email"type="text">
+     <label for="home">Hometown</label>
+      <input id="home" type="text">
+        
+      </input:> 
+      <button value="submit" id="sign-now-button" type="submit">Sign Now</button>
+    </form>
+
+    <!--- Sign Now Button --->
+    <div class="signatures revealable">
+      <!-- signatures go here -->
+    </div>
+
+  </div>
+  <div class="f revealable">
+    <p><a
+        href="https://www.europarl.europa.eu/contracts-and-grants/en/political-parties-and-foundations/european-political-parties">How
+        campaigns are funded in Europe</a></p>
+    <p><a href="https://www.opensecrets.org">Who are your representatives being funded by?</a></p>
+  </div>
+
+  <div id="Modal" class="modal">
+     <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 id="modalName"></h1>
+       <h2>Thank you for your support!</h2>
+        <img id="modal-image" class="active"  src="https://www.crownconnect.com/assets/ThankYou.jpg">
+     </div>
+  </div>
+  <script src="index.js"></script>
+
+  
+  </div>
+
+</body>
+
+</html>
